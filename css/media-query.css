@@ -5,7 +5,7 @@
 
   /* Container */
   .container {
-    width: 80vw;
+    width: 70vw;
     height: auto;
   }
 
@@ -27,25 +27,28 @@
   }
 
   .btn {
-    width: 60%;
+    width: 40%;
     margin: 1em auto;
+    font-size: 1em;
   }
 
   /* Result */
   .result {
-    width: 50%;
+    width: 80%;
     margin: 1em auto;
   }
   .result p {
     font-size: 1.1em;
-    padding-top: .5em;
+    padding-top: 1em;
   }
 }
 
 /* Para telas maiores */
 @media screen and (min-width: 992px) {
+  /* Container */
   .container {
-    width: 990px;
+    width: 500px;
+    height: auto;
   }
 
   .container header h1 {
@@ -55,5 +58,30 @@
   /* Form */
   form .input-box {
     font-size: 1.2em;
+  }
+
+  .input-box input[type="text"] {
+    width: 70%;
+  }
+
+  .input-box #height, .input-box #weight {
+    width: 20%;
+  }
+
+  .btn {
+    width: 40%;
+    margin: 1em auto;
+    font-size: 1.1em;
+  }
+
+  /* Result */
+  .result {
+    width: 100%;
+    margin: 1em auto;
+  }
+
+  .result p {
+    font-size: 1.1em;
+    padding-top: 1em;
   }
 }

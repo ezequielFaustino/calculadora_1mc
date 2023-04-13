@@ -74,6 +74,7 @@ form .input-box {
 .input-box input {
   padding: 6px 8px;
   border-radius: 5px;
+  border: none;
 }
 
 .input-box input:focus{
@@ -81,7 +82,7 @@ form .input-box {
 }
 
 .input-box #height, .input-box #weight {
-  width: 50%;
+  width: 40%;
 }
 
 .btn {
@@ -115,6 +116,7 @@ form .input-box {
   font-size: 1em;
   font-weight: 500;
   color: var(--third-color);
+  padding-top: .5em;
 }
 
 .result span {
