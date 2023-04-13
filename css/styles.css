@@ -1,7 +1,12 @@
 @charset "UTF-8";
 
 /* Paleta de cores */
-
+:root {
+  --bg-color-primary: #46CDCF;
+  --bg-color-secondary: #48466D;
+  --first-color: #111;
+  --second-color: #ABEDD8;
+}
 /* Estilos iniciais */
 * {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -11,7 +16,6 @@
 }
 
 body, html {
-  background-color: #ffffff;
   height: 100vh;
   width: 100vw;
 }
@@ -29,7 +33,8 @@ main {
   left: 50%;
   overflow: hidden;
 
-  background-color: lightblue;
+  background-color: var(--bg-color-primary);
+  color: var(--first-color);
   border-radius: 20px;
   width: 250px;
   height: 450px;
@@ -51,20 +56,65 @@ main {
   font-size: 1.3em;
 }
 
+/* Form */
 .container form {
   padding: 0.5em;
 }
 
 form .input-box {
+  font-size: .9em;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .input-box label {
+  font-style: italic;
   margin-bottom: .3em;
 }
 
 .input-box input {
   padding: 6px 8px;
+  border-radius: 5px;
+}
+
+.input-box #height, .input-box #weight {
+  width: 50%;
+}
+
+.btn {
+  font-size: 0.9em;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: rgba(26, 122, 231, 0.966);
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 6px;
+  margin: .5em 0;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.result {
+  background-color: var(--bg-color-secondary);
+  border-radius: 5px;
+  text-align: center;
+  height: 80px;
+}
+
+.result p {
+  font-size: 1em;
+  color: #fff;
+}
+
+.result span {
+  font-weight: 600;
+  color: var(--second-color);
 }
