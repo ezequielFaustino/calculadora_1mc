@@ -6,6 +6,7 @@
   --bg-color-secondary: #48466D;
   --first-color: #111;
   --second-color: #ABEDD8;
+  --third-color: #fff;
 }
 /* Estilos iniciais */
 * {
@@ -57,12 +58,9 @@ main {
 }
 
 /* Form */
-.container form {
-  padding: 0.5em;
-}
-
 form .input-box {
   font-size: .9em;
+  padding: 0.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,6 +76,10 @@ form .input-box {
   border-radius: 5px;
 }
 
+.input-box input:focus{
+  font-size: 0.9em;
+}
+
 .input-box #height, .input-box #weight {
   width: 50%;
 }
@@ -86,7 +88,7 @@ form .input-box {
   font-size: 0.9em;
   font-weight: 500;
   text-transform: uppercase;
-  background-color: rgba(26, 122, 231, 0.966);
+  background-color: var(--bg-color-secondary);
   border: none;
   border-radius: 5px;
   display: flex;
@@ -99,7 +101,7 @@ form .input-box {
 }
 
 .btn:hover {
-  color: #fff;
+  color: var(--second-color);
 }
 
 .result {
@@ -111,7 +113,8 @@ form .input-box {
 
 .result p {
   font-size: 1em;
-  color: #fff;
+  font-weight: 500;
+  color: var(--third-color);
 }
 
 .result span {
