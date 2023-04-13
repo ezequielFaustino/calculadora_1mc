@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* Versao tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .container {
+    width: 80vw;
+  }
+
+  .container header h1 {
+    font-size: 2.3em;
+  }
+}
+
+/* Para telas maiores */
+@media screen and (min-width: 992px) {
+  .container {
+    width: 990px;
+  }
+
+  .container header h1 {
+    font-size: 2.4em;
+  }
+}

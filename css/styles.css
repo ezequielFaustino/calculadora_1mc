@@ -1,3 +1,70 @@
 @charset "UTF-8";
 
 /* Paleta de cores */
+
+/* Estilos iniciais */
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  background-color: #ffffff;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Main */
+main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+
+  background-color: lightblue;
+  border-radius: 20px;
+  width: 250px;
+  height: 450px;
+  padding: 0.625em;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s;
+  transition-timing-function: ease;
+
+}
+
+/* Header */
+.container header {
+  border-bottom: 3px solid #111;
+  margin-bottom: 1em;
+}
+
+.container header h1 {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.container form {
+  padding: 0.5em;
+}
+
+form .input-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-box label {
+  margin-bottom: .3em;
+}
+
+.input-box input {
+  padding: 6px 8px;
+}
