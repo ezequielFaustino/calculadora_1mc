@@ -32,11 +32,15 @@ main {
   border-radius: 20px;
   width: 80%;
   height: 600px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 main header {
   border-bottom: 3px solid var(--first-color);
-  margin: 1.25em 0;
+  padding: 1.25em 0;
 }
 
 header h1 {
@@ -118,14 +122,25 @@ main .result {
 /* Footer */
 
 footer {
-  margin: 1.25em 0;
+  padding: 1.25em 0;
 }
 
 footer p {
   text-align: center;
+  margin-bottom: .5em;
 }
 
 footer p a {
-  color: var(--second-color);
+  background-color: var(--bg-color-secondary);
+  border-radius: 5px;
+  color: var(--third-color);
+  padding: 6px 8px;
+  transition: 0.3s ease;
 }
+
+footer p a:hover {
+  color: var(--second-color);
+  text-decoration: none;
+}
+
   
