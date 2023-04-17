@@ -98,7 +98,6 @@ main .result {
   margin: .3em auto;
 
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
