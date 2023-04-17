@@ -125,3 +125,8 @@ footer {
 footer p {
   text-align: center;
 }
+
+footer p a {
+  color: var(--second-color);
+}
+  
