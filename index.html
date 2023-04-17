@@ -6,41 +6,51 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora IMC - Ezequiel</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/media-query.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/media_query.css">
+  <!-- Javascript -->
   <script src="js/script.js" defer></script>
 </head>
 
 <body>
-  <main>
-    <div class="container">
-      <header id="title">
+  <div class="wrapper">
+
+    <main>
+      <header>
         <h1>Calculadora - IMC</h1>
       </header>
 
-      <form action="">
+      <form>
         <div class="input-box">
           <label for="name">Nome:</label>
           <input type="text" id="name">
         </div>
+
         <div class="input-box">
           <label for="height">Altura:</label>
           <input type="number" id="height" step="0.1" max="2.51">
         </div>
+
         <div class="input-box">
           <label for="weight">Peso:</label>
           <input type="number" id="weight" min="1" max="595">
         </div>
 
-        <button class="btn" id="calc-btn">Calcular</button>
-        <button class="btn" type="reset">Limpar valores</button>
+        <div class="form-group">
+          <button id="calc-btn">Calcular</button>
+          <button type="reset">Limpar valores</button>
+        </div>
       </form>
 
       <div class="result" id="show-result">
-
       </div>
-    </div>
-  </main>
+
+      <footer>
+        <p>Desenvolvido por Ezequiel Faustino.</p>
+        <p><a href="https://youtu.be/RacwEvoTz_Y" target="_blank">Mini-projeto de referência</a></p>
+      </footer>
+    </main>
+  </div>
 </body>
 
 </html>

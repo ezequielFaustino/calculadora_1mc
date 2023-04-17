@@ -73,13 +73,13 @@ class Imc {
     let msg = '';
 
     if (field.name == '') {
-      msg += `|campo nome vazio|`;
+      msg += `[informe nome] `;
     }
     if (field.height == '') {
-      msg += '|campo altura vazio|';
+      msg += '[informe altura] ';
     }
     if (field.weight == '') {
-      msg += '|campo peso vazio|';
+      msg += '[informe peso]';
     }
 
     if (msg !== '') {
