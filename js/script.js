@@ -1,5 +1,10 @@
-// Elementos
+// imports
+import * as imcForm from './imcForm.js'
 
+imcForm.getValuesFromTheForm()
+
+
+/*
 class Imc {
   constructor() {
     this.valueImc = 0;
@@ -89,5 +94,6 @@ class Imc {
   }
 
 }
+*/
 
 // Eventos
