@@ -18,44 +18,46 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper bg-primary-400">
+    <header class="flex-center">
+      <h1 class="title">Calc Imc</h1>
+    </header>
 
     <main>
-      <header class="header">
-        <h1>Calculadora - IMC</h1>
-      </header>
-
-      <form data-js="form">
+      <form data-js="form" class="flex-center flex-col">
         <div class="input-box">
           <label for="name">Nome:</label>
-          <input type="text" id="name">
+          <input type="text" data-js="name">
         </div>
 
         <div class="input-box">
           <label for="height">Altura:</label>
-          <input type="number" id="height" step="0.1" max="2.51">
+          <input type="number" data-js="height" step="0.1" max="2.51">
         </div>
 
         <div class="input-box">
           <label for="weight">Peso:</label>
-          <input type="number" id="weight" min="1" max="595">
+          <input type="number" data-js="weight" min="1" max="595">
         </div>
 
         <div class="form-group">
-          <button id="calc-btn">Calcular</button>
+          <button type="submit" class="btn">Calcular</button>
           <button type="reset">Limpar valores</button>
         </div>
       </form>
 
-      <div class="result" id="show-result">
+      <div class="result flex-center" data-js="show-result">
       </div>
-
-      <footer>
-        <p>Desenvolvido por Ezequiel Faustino.</p>
-        <p><a href="https://youtu.be/RacwEvoTz_Y" target="_blank">Mini-projeto de referência</a></p>
-      </footer>
     </main>
+
+    <footer class="flex-center flex-col">
+      <p class="author">Desenvolvido por Ezequiel Faustino.</p>
+      <a class="reference" href="https://youtu.be/RacwEvoTz_Y" target="_blank">Mini-projeto de referência</a>
+
+    </footer>
   </div>
+
+
 </body>
 
 </html>

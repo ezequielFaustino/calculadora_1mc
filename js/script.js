@@ -1,6 +1,4 @@
 // Elementos
-const calcBtn = document.querySelector("#calc-btn");
-const showResult = document.querySelector("#show-result");
 
 class Imc {
   constructor() {
@@ -92,12 +90,4 @@ class Imc {
 
 }
 
-// Instancia objeto da classe
-const imc = new Imc();
-
 // Eventos
-calcBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-
-  imc.save();
-})
