@@ -1,13 +1,19 @@
 export const getValuesFromTheForm = () => {
-  const form = document.querySelector('[data-js="form"]')
+  // const form = document.querySelector('[data-js="form"]')
+  const inputName = document.querySelector('[data-js="name"]').value
+  const inputHeight = document.querySelector('[data-js="height"]').value
+  const inputWeight = document.querySelector('[data-js="weight"]').value
 
-  form.addEventListener('submit', (e) => {
-    e.preventDefault()
+  const inputsValues = [
+    { name: inputName },
+    { height: inputHeight },
+    { weight: inputWeight }
+  ]
 
-    const inputName = document.querySelector('[data-js="name"]')
-    const inputHeight = document.querySelector('[data-js="height"]')
-    const inputWeight = document.querySelector('[data-js="weight"]')
-    console.log(inputWeight.value)
+  // form.addEventListener('submit', (e) => {
+  //   e.preventDefault()
 
-  })
+  // })
+
+  return inputsValues
 }

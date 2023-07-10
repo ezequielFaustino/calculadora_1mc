@@ -105,6 +105,11 @@ body {
   background-color: var(--clr-primary-300);
 }
 
+.highlight {
+  font-style: italic;
+  font-weight: var(--fs-700);
+}
+
 .author {
   margin-top: 1rem;
   text-align: center;

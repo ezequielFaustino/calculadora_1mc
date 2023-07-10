@@ -1,5 +1,6 @@
 // imports
 import * as imcForm from './imcForm.js'
+import * as dynamicElements from './dynamicsElements.js'
 
 imcForm.getValuesFromTheForm()
 
