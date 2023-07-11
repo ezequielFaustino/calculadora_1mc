@@ -2,7 +2,7 @@
 
 ### Técnicas básicas para o aprendizado em desenvolvimento front-end aplicadas:
 - HTML com tags semânticas;
-- CSS com position abosulte para centrar a aplicação flex para posicionar os demais elementos;
+- CSS com position abosulte para centralizar a aplicação flex para posicionar os demais elementos;
 
 ## Funcionaldidades Javascript:
 - Função que utiliza a fórmula para calcular o IMC;
