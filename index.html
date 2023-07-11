@@ -6,51 +6,58 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora IMC - Ezequiel</title>
+  <!-- Google Fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- CSS do projeto -->
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/media_query.css">
-  <!-- Javascript -->
-  <script src="js/script.js" defer></script>
+  <!-- <link rel="stylesheet" href="css/media_query.css"> -->
+
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper bg-primary-400">
+    <header class="flex-center">
+      <h1 class="title">Calc Imc</h1>
+    </header>
 
     <main>
-      <header>
-        <h1>Calculadora - IMC</h1>
-      </header>
-
-      <form>
+      <form class="flex-center flex-col">
         <div class="input-box">
           <label for="name">Nome:</label>
-          <input type="text" id="name">
+          <input type="text" data-js="name">
         </div>
 
         <div class="input-box">
-          <label for="height">Altura:</label>
-          <input type="number" id="height" step="0.1" max="2.51">
+          <label for="height">Altura (m) :</label>
+          <input type="text" data-js="height">
         </div>
 
         <div class="input-box">
-          <label for="weight">Peso:</label>
-          <input type="number" id="weight" min="1" max="595">
+          <label for="weight">Peso (kg):</label>
+          <input type="text" data-js="weight">
         </div>
 
-        <div class="form-group">
-          <button id="calc-btn">Calcular</button>
-          <button type="reset">Limpar valores</button>
+        <div class="input-box">
+          <button data-js="submit-btn" class="btn">Calcular</button>
+          <button type="reset" data-js="reset-btn" class="btn">Limpar valores</button>
         </div>
       </form>
 
-      <div class="result" id="show-result">
-      </div>
+      <div class="result flex-center" data-js="show-result">
 
-      <footer>
-        <p>Desenvolvido por Ezequiel Faustino.</p>
-        <p><a href="https://youtu.be/RacwEvoTz_Y" target="_blank">Mini-projeto de referência</a></p>
-      </footer>
+      </div>
     </main>
+
+    <footer class="flex-center flex-col">
+      <p class="author">Desenvolvido por Ezequiel Faustino.</p>
+      <a class="reference" href="https://youtu.be/RacwEvoTz_Y" target="_blank">Mini-projeto de referência</a>
+
+    </footer>
   </div>
+
+  <script type="module" src="js/script.js"></script>
 </body>
 
 </html>
