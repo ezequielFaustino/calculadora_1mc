@@ -23,6 +23,8 @@
 }
 
 /* Estilos iniciais */
+*,
+*::before,
 *::after {
   box-sizing: border-box;
 }
